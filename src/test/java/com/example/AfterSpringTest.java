@@ -23,7 +23,7 @@ public class AfterSpringTest {
     @Autowired private EmptyAfter after;
     @Autowired private CacheManager cacheManager;
 
-    @BeforeEach public void resetAfter() {
+    @BeforeEach public void reset() {
         after.reset();
         cacheManager.getCache("titlesFromMainPage").clear();
     }
